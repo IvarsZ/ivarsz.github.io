@@ -9,15 +9,21 @@
 
     <title>Ivars Zubkāns</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS 
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    -->
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/modernizr.custom.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
@@ -33,6 +39,7 @@
 		
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -42,20 +49,33 @@
           </button>
           <a class="navbar-brand" href="#">Ivars Zubkāns</a>
         </div>
+
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-social-icon" href="mailto:Ivars.Zubkans@gmail.com""><i class="fa fa-envelope-square fa-2x"></i></a></li>
+            <li><a class="nav-social-icon" href="https://twitter.com/IvarsZ_"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            <li><a class="nav-social-icon" href="https://www.facebook.com/ivars.zubkans"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <li><a class="nav-social-icon" href="https://www.linkedin.com/pub/ivars-zubkans/32/750/19"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            <li><a class="nav-social-icon" href="https://github.com/IvarsZ"><i class="fa fa-github-square fa-2x"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
 	
 	<!-- HEADER SECTION -->
 	<div id="headerwrap">
+    <div class="container">
+    <div class="row">
 	  <h1>Ivars Zubkāns</h1>
 	  <h3>Hello, I love technology and maths.</h3>
+    </div>    
+    </div>
 	</div><!-- /headerwrap -->
 	
 	<!-- ABOUT SECTION -->
@@ -70,11 +90,11 @@
         <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
 	        <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 	
-	        <p>I'm a software developer and entrepreneur. I'm currently a member of the <a href="http://www.joinef.com">Entrepreneur First</a> 2015 cohort, where I'm founding my own tech startup. I graduated University of St Andrews with a 1<sup>st</sup> in Computer Science and Mathematics in 2014.</p>
+	        <p>I'm a software developer and entrepreneur. Currently I'm in the <a href="http://www.joinef.com">Entrepreneur First</a> 2015 cohort, where I'm founding my own tech startup. I graduated University of St Andrews with a 1<sup>st</sup> in Computer Science and Mathematics in 2014.</p>
           <!-- cv later, in carousel explain past projects, e-mail etc links in contact me, contact buttons in the navbar, picture somewhere -->
 	        <p>I've strong web and software development skills. For web development I usually use Ruby on Rails together with the usual combination of html5, css and js. Programming language wise I've a good experience with Java, Ruby, Javascript, C/C++, C# and R. From mathematics my main interests are discrete mathematics, especially graph theory, and abstract algebra.</p>
 	        <p>My interest outside of work are basketball, fitness, board games and dancing. I played for my university's basketball team and was in swing dance society. From board games my favourite one is Go.</a></p>
-	        <p>I'm available for freelance jobs. Contact me now.</p>
+	        <p>I'm available for freelance jobs. <a href="#contact">Contact me now.</a></p>
         </div>
       </div>
     </div>
@@ -105,7 +125,7 @@
 				</div>
 			</div>
 			<ol class="carousel-indicators">
-			    <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+			    <li class="active" data-target="#projects-carousel" data-slide-to="0"></li>
 			    <li data-target="#projects-carousel" data-slide-to="1"></li>
 			    <li data-target="#projects-carousel" data-slide-to="2"></li>
 			</ol>
@@ -123,11 +143,29 @@
 		<div class="container">
 			<div class="row">
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p>Some Avenue, 987<br/>Madrid, Spain<br/>+34 8984-4343</p>
-					<p>iam@awesomemail.com</p>
-					<p><button type="button" class="btn btn-warning">YEAH! CONTACT ME NOW!</button></p>
+
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>I'm currently based in London, and you can usually find me in the Club Workspace at the Leathermarket. You can also always reach me at <a href="mailto:Ivars.Zubkans@gmail.com">Ivars.Zubkans@gmail.com</a> or via social media.</p>
+
+          <h4>In person</h4>
+					<p class="centered">
+						<strong>
+              Club Workspace<br/>
+						  The Leathermarket<br/>
+            </strong>
+						Weston Street<br/>
+						London SE1 3ER<br/>
+						United Kingdom
+					</p>
+
+          <h4>Online</h4>
+          <ul class="horizontal-list centered">
+            <li><a class="nav-social-icon" href="mailto:Ivars.Zubkans@gmail.com""><i class="fa fa-envelope-square"></i></a></li>
+            <li><a class="nav-social-icon" href="https://twitter.com/IvarsZ_"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a class="nav-social-icon" href="https://www.facebook.com/ivars.zubkans"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a class="nav-social-icon" href="https://www.linkedin.com/pub/ivars-zubkans/32/750/19"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a class="nav-social-icon" href="https://github.com/IvarsZ"><i class="fa fa-github-square"></i></a></li>
+          </ul>
 				</div>
 			</div>
 		</div>
@@ -148,11 +186,17 @@
     var fh = parseInt($(document.documentElement).css('font-size'));
     var dh = 20;
 
-    $("#headerwrap").height(wh - nh - 2*fh - dh);
-    $(".f").height(wh - nh - 4*fh - dh);
+    var h = Math.max(wh - nh - 2*fh - dh, $("#headerwrap").height());
+    $("#headerwrap").height(h);
 
-    $("#projects-carousel").height(wh - nh - 7*fh);
-    $('#projects-carousel .item img').height(wh - nh - 7*fh);
+    $(".f").each(function(index, element) {
+      h = Math.max(wh - nh - 4*fh - dh, $(element).height());
+      $(element).height(h);
+    })
+
+    $("#carousel-inner").height("auto");
+    h = Math.max(wh - nh - 7*fh, $("#carousel-inner").height());
+    $("#carousel-inner").height(h);
 
     $(window).resize(function(){
 
@@ -160,11 +204,24 @@
       nh = $(".navbar").height();
       fh = parseInt($(document.documentElement).css('font-size'));
 
-      $("#headerwrap").height(wh - nh - 2*fh - dh);
-      $(".f").height(wh - nh - 4*fh - dh);
+      $("#carousel-inner").height("auto");
+      h = Math.max(wh - nh - 7*fh, $("#carousel-inner").height());
+      $("#carousel-inner").height(h);
 
-      $("#projects-carousel").height(wh - nh - 7*fh);
-      $('#projects-carousel .item img').height(wh - nh - 7*fh);
+      $("#headerwrap").height("auto");
+      h = Math.max(wh - nh - 2*fh - dh, $("#headerwrap").height());
+      $("#headerwrap").height(h);
+
+      $(".f").height("auto");
+      $(".f").each(function(index, element) {
+        h = Math.max(wh - nh - 4*fh - dh, $(element).height());
+        $(element).height(h);
+      })
+    });
+
+    $('#stop-cycle').click(function () {
+        Console.log("test");
+        $('#projects-carousel').carousel('pause');
     });
   </script>
 </body>

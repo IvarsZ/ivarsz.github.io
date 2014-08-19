@@ -28,8 +28,9 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
-    color: #111;
+    color: grey;
     margin: 0;
+    text-align: center;
 }
 
 /* Paragraph & Typographic */
@@ -55,7 +56,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: black;
     text-decoration: none;
     outline: 0;
 }
@@ -91,7 +92,7 @@ a.header:focus {
 	background: url(../img/header-bg.png) repeat;
 	text-align:center;
 	background-position: center center;
-	height: 100vh;
+  height: auto;
 
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -118,7 +119,7 @@ a.header:focus {
 	color: grey;
 
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20px;
 
 	font-size: 2em;
 	font-weight: 100;
@@ -128,7 +129,7 @@ a.header:focus {
 
 .headingwrap {
   
-  text-align:center;
+  text-align: center;
 }
 
 .headingwrap h3 {
@@ -138,6 +139,8 @@ a.header:focus {
 	font-size: 2em;
 	font-weight: 700;
 	letter-spacing: 1px;
+
+  padding-bottom: 1vh;
 }
 
 /* For nice link jumping */
@@ -161,20 +164,33 @@ a.header:focus {
 /* Footer Wrap */
 
 .f {
-	text-align: center;
+	text-align: justified;
 }
 
 .f h3 {
-	color: grey;
 	font-size: 2em;
 	font-weight: 700;
 	letter-spacing: 1px;	
 }
 
+.f h4 {
+	font-size: 1.6em;
+	font-weight: 700;
+	letter-spacing: 1px;
+  padding-bottom: 3vh;
+}
+
 .f i {
-	font-size: 0.5em;
+  font-size: 4em;
+  padding: 0px;
 	color: grey;
-  padding: 3px;
+}
+
+.f i:hover,
+.f i:focus {
+    color: #f85c37;
+    text-decoration: none;
+    outline: 0;
 }
 
 .f p {
@@ -188,30 +204,51 @@ a.header:focus {
 
 .f img {
 	text-align: center;
-  height: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.f.item {
-  height: 100%;
 }
 
 .carousel-indicators {
   margin: 0;
   left: 0;
-  bottom: 0px;
+  top: 0;
   width: 100%;
 }
 
 .carousel-indicators .active {
+  
   border: 2px solid;
   color:  grey;
   background-color: #f85c37;
+
+  height: 1.5em;
+  width: 1.5em;
 }
 
 
 .carousel-indicators li {
   border: 2px solid;  
   color: grey;
+
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.nav a.nav-social-icon {
+  padding: 0px;  
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.horizontal-list { 
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.horizontal-list li { 
+  display: inline-block;
+  padding: 0;
+  margin: 0
 }
